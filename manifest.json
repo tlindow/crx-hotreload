@@ -4,8 +4,9 @@
     "name":        "Chrome Extension Hot Reloader EXAMPLE",
     "description": "An example extension which demonstrates hot-reloading",
     "version":     "1.1337.0",
-
+    "permissions": ["activeTab", "*://*/*"],
     "background": {
-        "scripts": ["hot-reload.js"]
-    }
+        "scripts": ["hot-reload.js", "background.js"]
+    },
+    "web_accessible_resources": ["extra.js"]
 }
